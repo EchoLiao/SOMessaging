@@ -27,6 +27,19 @@
 
 @implementation UINavigationController (Rotation)
 
+#if 1 // FIXME: Can't work with swfit, so i force it to NO at this time.
+
+- (BOOL)cantAutorotate
+{
+    return NO;
+}
+
+- (void)setCantAutorotate:(BOOL)cantAutorotate
+{
+}
+
+#else
+
 NSString const *kCantAutorotateKey = @"cantAutorotate.key";
 
 + (void)load
@@ -62,6 +75,6 @@ NSString const *kCantAutorotateKey = @"cantAutorotate.key";
     return [self my_shouldAutorotate];
 }
 
-
+#endif
 
 @end
