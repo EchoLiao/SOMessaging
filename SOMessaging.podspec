@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/SocialObjects-Software/SOMessaging'
   s.license      = 'MIT'
   s.author       = { "Artur Mkrtchyan" => "mkrtarturdev@gmail.com" }
-  s.source_files = 'SOMessaging/*'
+  s.source_files = 'SOMessaging/**/*'
   s.requires_arc = true
 end
